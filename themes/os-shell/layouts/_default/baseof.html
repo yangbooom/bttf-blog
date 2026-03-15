@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  <div class="os-desktop">
+    {{- partial "menubar.html" . -}}
+    <div class="os-window">
+      <div class="window-titlebar">
+        <div class="traffic-lights">
+          <span class="light red"></span>
+          <span class="light yellow"></span>
+          <span class="light green"></span>
+        </div>
+        <button class="explorer-toggle" id="explorer-toggle" aria-label="Toggle sidebar">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+            <rect y="2" width="14" height="1.5" rx="0.75"/>
+            <rect y="6.25" width="14" height="1.5" rx="0.75"/>
+            <rect y="10.5" width="14" height="1.5" rx="0.75"/>
+          </svg>
+        </button>
+        <div class="window-title">
+          {{ if .IsHome }}
+            ~/{{ .Site.Title }}
+          {{ else }}
+            ~/{{ .Site.Title }}/{{ .RelPermalink }}
+          {{ end }}
+        </div>
+        <div class="window-actions"></div>
+      </div>
+      <div class="window-body">
+        {{- partial "sidebar.html" . -}}
+        <main class="content-viewer">
+          {{- block "main" . }}{{- end }}
+        </main>
+      </div>
+    </div>
+    {{- partial "dock.html" . -}}
+  </div>
+  <script src="{{ "js/app.js" | relURL }}"></script>
+</body>
+</html>

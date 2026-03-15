@@ -1,0 +1,7 @@
+name = "OS Shell"
+license = "MIT"
+licenselink = ""
+description = "A Hugo theme that mimics an operating system UI"
+
+[author]
+  name = "kimuyb"

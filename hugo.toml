@@ -1,0 +1,35 @@
+baseURL = '/'
+languageCode = 'ko'
+title = 'BTTF Blog'
+theme = 'os-shell'
+
+[params]
+  description = 'A blog that looks like an operating system'
+  author = 'kimuyb'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+    lineNos = true
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menus.main]]
+    name = 'Tags'
+    url = '/tags/'
+    weight = 20
+  [[menus.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 30

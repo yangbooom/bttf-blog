@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="home-view">
+  <div class="home-header">
+    <div class="home-icon">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="4" y="4" width="40" height="32" rx="3" />
+        <line x1="4" y1="28" x2="44" y2="28" />
+        <line x1="24" y1="36" x2="24" y2="42" />
+        <line x1="16" y1="42" x2="32" y2="42" />
+      </svg>
+    </div>
+    <h1>{{ .Site.Title }}</h1>
+    <p class="home-desc">{{ .Site.Params.description }}</p>
+  </div>
+
+  <div class="recent-files">
+    <h2 class="section-label">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+        <path d="M7 0a7 7 0 100 14A7 7 0 007 0zm.5 3v4.25l2.9 1.72-.5.86L6.5 7.75V3h1z"/>
+      </svg>
+      Recent Files
+    </h2>
+    <div class="file-grid">
+      {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
+      <a href="{{ .Permalink }}" class="file-card">
+        <div class="file-card-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 4a2 2 0 012-2h10l8 8v18a2 2 0 01-2 2H8a2 2 0 01-2-2V4z"/>
+            <path d="M18 2v8h8"/>
+            <line x1="10" y1="16" x2="22" y2="16"/>
+            <line x1="10" y1="20" x2="22" y2="20"/>
+            <line x1="10" y1="24" x2="18" y2="24"/>
+          </svg>
+        </div>
+        <div class="file-card-info">
+          <span class="file-card-name">{{ .Title }}</span>
+          <span class="file-card-meta">{{ .Date.Format "2006-01-02" }} &middot; {{ .ReadingTime }}min</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
