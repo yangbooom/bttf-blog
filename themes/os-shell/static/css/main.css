@@ -301,6 +301,7 @@ a {
   overflow: hidden;
   flex-shrink: 0;
   transition: width var(--transition-normal);
+  white-space: nowrap;
 }
 
 .file-explorer.collapsed {
