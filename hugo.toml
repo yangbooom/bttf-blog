@@ -3,6 +3,7 @@ languageCode = 'ko'
 title = 'BTTF Blog'
 theme = 'os-shell'
 enableRobotsTXT = true
+buildFuture = true
 
 [params]
   description = 'A blog that looks like an operating system'

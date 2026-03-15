@@ -1,6 +1,6 @@
 ---
 title: "하드웨어 기술 블로그를 시작하며"
-date: 2026-03-16
+date: 2026-03-15
 tags: ["hardware", "nudk40", "meetup"]
 categories: ["hardware"]
 ---
