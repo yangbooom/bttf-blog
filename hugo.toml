@@ -2,6 +2,7 @@ baseURL = 'https://blog.bttf.io/'
 languageCode = 'ko'
 title = 'BTTF Blog'
 theme = 'os-shell'
+enableRobotsTXT = true
 
 [params]
   description = 'A blog that looks like an operating system'
