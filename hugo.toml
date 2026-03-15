@@ -1,3 +1,4 @@
+# NOTE: HTTP→HTTPS redirect must be configured at DNS/CDN level (e.g., Cloudflare, GitHub Pages settings)
 baseURL = 'https://blog.bttf.io/'
 title = 'BTTF Blog'
 theme = 'os-shell'
@@ -11,7 +12,7 @@ defaultContentLanguage = 'ko'
     languageName = '한국어'
     weight = 1
     [languages.ko.params]
-      description = '운영체제처럼 생긴 블로그'
+      description = 'on-device AI, 데이터 엔지니어링, DuckDB, WebAssembly, 커스텀 키보드 등 기술 주제를 다루는 블로그'
     [[languages.ko.menus.main]]
       name = 'Posts'
       url = '/posts/'
@@ -30,7 +31,7 @@ defaultContentLanguage = 'ko'
     languageName = 'EN'
     weight = 2
     [languages.en.params]
-      description = 'A blog that looks like an operating system'
+      description = 'A technical blog covering on-device AI, data engineering, DuckDB, WebAssembly, custom keyboards, and more'
     [[languages.en.menus.main]]
       name = 'Posts'
       url = '/en/posts/'

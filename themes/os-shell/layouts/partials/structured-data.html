@@ -1,0 +1,41 @@
+{{- $image := "/img/og-default.png" | absURL }}
+{{- with .Params.images }}
+  {{- $image = index . 0 | absURL }}
+{{- else }}
+  {{- with .Site.Params.images }}{{ $image = index . 0 | absURL }}{{ end }}
+{{- end }}
+{{- if and .IsPage (eq .Section "posts") }}
+  {{- $description := .Site.Params.description }}
+  {{- with .Description }}
+    {{- $description = . }}
+  {{- else }}
+    {{- with .Summary }}{{ $description = . }}{{ end }}
+  {{- end }}
+  {{- $author := dict "@type" "Person" "name" .Site.Params.author }}
+  {{- $mainEntity := dict "@type" "WebPage" "@id" .Permalink }}
+  {{- $schema := dict
+    "@context" "https://schema.org"
+    "@type" "Article"
+    "headline" .Title
+    "author" $author
+    "datePublished" (.Date.Format "2006-01-02")
+    "dateModified" (.Lastmod.Format "2006-01-02")
+    "description" $description
+    "mainEntityOfPage" $mainEntity
+    "image" $image
+    "inLanguage" .Language.Lang
+  }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- else if .IsHome }}
+  {{- $author := dict "@type" "Person" "name" .Site.Params.author }}
+  {{- $schema := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "name" .Site.Title
+    "url" .Site.BaseURL
+    "description" .Site.Params.description
+    "inLanguage" .Language.Lang
+    "author" $author
+  }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{- end }}
