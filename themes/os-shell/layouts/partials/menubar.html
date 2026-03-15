@@ -1,11 +1,14 @@
 <nav class="os-menubar">
   <div class="menubar-left">
     <a href="{{ "/" | relURL }}" class="menubar-logo" aria-label="Home">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-        <rect x="1" y="1" width="6" height="6" rx="1"/>
-        <rect x="9" y="1" width="6" height="6" rx="1"/>
-        <rect x="1" y="9" width="6" height="6" rx="1"/>
-        <rect x="9" y="9" width="6" height="6" rx="1"/>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <g transform="translate(12,12) rotate(180) translate(-12,-12)">
+          <rect x="10.5" y="4" width="3" height="9" rx="1.5"/>
+          <rect x="4" y="14" width="9" height="3" rx="1.5" transform="rotate(-30 8.5 15.5)"/>
+          <rect x="11" y="14" width="9" height="3" rx="1.5" transform="rotate(30 15.5 15.5)"/>
+          <circle cx="12" cy="13" r="3.5"/>
+          <circle cx="12" cy="13" r="1.8" fill="var(--window-bg)"/>
+        </g>
       </svg>
     </a>
     <span class="menubar-title">{{ .Site.Title }}</span>
