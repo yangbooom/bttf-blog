@@ -94,10 +94,14 @@ html {
 body {
   font-family: var(--font-sans);
   color: var(--content-text);
+  background: var(--desktop-bg);
   background: var(--desktop-gradient);
   line-height: 1.6;
   min-height: 100vh;
   overflow: hidden;
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
 a {
@@ -1042,7 +1046,7 @@ a {
 .os-dock {
   display: flex;
   justify-content: center;
-  padding: 6px 0 10px;
+  padding: 6px 0 calc(10px + env(safe-area-inset-bottom));
   flex-shrink: 0;
 }
 
