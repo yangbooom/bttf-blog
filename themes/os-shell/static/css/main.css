@@ -431,6 +431,80 @@ a {
   font-size: 15px;
 }
 
+/* --- Bio Section --- */
+.home-bio {
+  max-width: 560px;
+  margin: 0 auto 48px;
+  padding: 24px;
+  background: var(--content-code-bg);
+  border: 1px solid var(--content-border);
+  border-radius: 10px;
+}
+
+.bio-intro h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--content-heading);
+  margin-bottom: 2px;
+}
+
+.bio-location {
+  font-size: 13px;
+  color: var(--content-muted);
+  font-family: var(--font-mono);
+  margin-bottom: 8px;
+}
+
+.bio-role {
+  font-size: 14px;
+  color: var(--content-text);
+  margin-bottom: 6px;
+}
+
+.bio-desc {
+  font-size: 14px;
+  color: var(--content-muted);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.bio-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.bio-tag {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.bio-links {
+  display: flex;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--content-border);
+}
+
+.bio-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--content-link);
+  transition: color var(--transition-fast);
+}
+
+.bio-link:hover {
+  color: var(--content-link-hover);
+}
+
 .section-label {
   display: flex;
   align-items: center;
