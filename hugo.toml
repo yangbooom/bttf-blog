@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://yangbooom.github.io/'
 languageCode = 'ko'
 title = 'BTTF Blog'
 theme = 'os-shell'
