@@ -953,6 +953,56 @@ a {
   margin: 32px 0;
 }
 
+/* --- GitHub Card --- */
+.github-card {
+  display: block;
+  padding: 16px;
+  margin: 16px 0;
+  background: var(--content-code-bg);
+  border: 1px solid var(--content-border);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+}
+
+.github-card:hover {
+  border-color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.github-card-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.github-card-header svg {
+  color: var(--content-muted);
+  flex-shrink: 0;
+}
+
+.github-card-owner {
+  color: var(--content-muted);
+}
+
+.github-card-sep {
+  color: var(--content-muted);
+}
+
+.github-card-name {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.github-card-desc {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--content-muted);
+  line-height: 1.5;
+}
+
 /* --- Document Footer Nav --- */
 .doc-footer {
   margin-top: 48px;
