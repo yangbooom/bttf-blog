@@ -12,7 +12,7 @@
         </g>
       </svg>
     </a>
-    <span class="menubar-title">{{ .Site.Title }}</span>
+    <a href="{{ "/" | relURL }}" class="menubar-title">{{ .Site.Title }}</a>
     {{ range .Site.Menus.main }}
       <a href="{{ .URL }}" class="menubar-item{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
     {{ end }}
