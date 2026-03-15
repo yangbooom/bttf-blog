@@ -18,6 +18,17 @@
     {{ end }}
   </div>
   <div class="menubar-right">
+    {{ if .IsTranslated }}
+    {{ range .Translations }}
+    <a href="{{ .Permalink }}" class="menubar-lang">{{ .Language.LanguageName }}</a>
+    {{ end }}
+    {{ else }}
+    {{ range .Site.Languages }}
+    {{ if ne .Lang $.Site.Language.Lang }}
+    <a href="{{ .Lang | absURL }}" class="menubar-lang">{{ .LanguageName }}</a>
+    {{ end }}
+    {{ end }}
+    {{ end }}
     <span class="menubar-clock" id="menubar-clock"></span>
   </div>
 </nav>

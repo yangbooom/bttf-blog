@@ -203,6 +203,21 @@ a {
   gap: 12px;
 }
 
+.menubar-lang {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--content-muted);
+  padding: 2px 6px;
+  border: 1px solid var(--content-border);
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+}
+
+.menubar-lang:hover {
+  color: var(--content-text);
+  border-color: var(--accent);
+}
+
 .menubar-clock {
   color: var(--content-muted);
   font-family: var(--font-mono);

@@ -1,15 +1,52 @@
 baseURL = 'https://blog.bttf.io/'
-languageCode = 'ko'
 title = 'BTTF Blog'
 theme = 'os-shell'
 enableRobotsTXT = true
 buildFuture = true
+defaultContentLanguage = 'ko'
+
+[languages]
+  [languages.ko]
+    languageCode = 'ko'
+    languageName = '한국어'
+    weight = 1
+    [languages.ko.params]
+      description = '운영체제처럼 생긴 블로그'
+    [[languages.ko.menus.main]]
+      name = 'Posts'
+      url = '/posts/'
+      weight = 10
+    [[languages.ko.menus.main]]
+      name = 'Tags'
+      url = '/tags/'
+      weight = 20
+    [[languages.ko.menus.main]]
+      name = 'About'
+      url = '/about/'
+      weight = 30
+
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'EN'
+    weight = 2
+    [languages.en.params]
+      description = 'A blog that looks like an operating system'
+    [[languages.en.menus.main]]
+      name = 'Posts'
+      url = '/en/posts/'
+      weight = 10
+    [[languages.en.menus.main]]
+      name = 'Tags'
+      url = '/en/tags/'
+      weight = 20
+    [[languages.en.menus.main]]
+      name = 'About'
+      url = '/en/about/'
+      weight = 30
 
 [params]
-  description = 'A blog that looks like an operating system'
   author = 'kimuyb'
   images = ['/img/og-default.png']
-
   [params.social]
     twitter = ''
 
@@ -25,17 +62,3 @@ buildFuture = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-[menus]
-  [[menus.main]]
-    name = 'Posts'
-    url = '/posts/'
-    weight = 10
-  [[menus.main]]
-    name = 'Tags'
-    url = '/tags/'
-    weight = 20
-  [[menus.main]]
-    name = 'About'
-    url = '/about/'
-    weight = 30
