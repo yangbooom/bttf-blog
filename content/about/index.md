@@ -1,15 +1,23 @@
 ---
 title: "About"
+date: 2026-03-15
 ---
 
-## About this blog
+## About
 
-This is a personal blog built with Hugo, styled to look and feel like an operating system.
+Young, based in Seoul.
 
-Content is organized like files and folders — browse through the sidebar, or use the dock at the bottom.
+Co-founder of [Paprika Data Lab Inc.](https://paprikadatalab.com) since 2020. I like building things and learning how they work.
 
-### Tech stack
+Where we're going, we don't need roads.
 
-- **Hugo** — static site generator
-- **Custom OS Shell theme** — handcrafted CSS, minimal JS
-- No frameworks, no build tools, just HTML/CSS/JS
+### Links
+
+- [GitHub](https://github.com/yangbooom)
+- [LinkedIn](https://linkedin.com/in/youngbum-kim)
+- [Paprika Data Lab](https://paprikadatalab.com)
+- [Walla](https://home.walla.my)
+
+### This blog
+
+Built with Hugo, styled to look and feel like an operating system. No frameworks, no build tools — just HTML, CSS, and a bit of JS.
