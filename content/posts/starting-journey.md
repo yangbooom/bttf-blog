@@ -3,8 +3,10 @@ title: 블로그를 시작하며
 date: 2026-03-15
 tags:
   - hardware
-  - nudk40
   - meetup
+  - nucode
+  - nu40
+  - numakers
 categories:
   - hardware
 ---
@@ -15,7 +17,7 @@ categories:
 
 ## 시작
 
-[nucode](https://nuworks.io) 대표님의 소개로 하드웨어 관련 technical writing을 시작한다. NUDK40을 기반으로 무언가를 만드는 것부터 출발하지만, 이 블로그에는 그 외에도 내가 만들고 싶은 것들을 기록해 나갈 예정이다.
+[nucode](https://nuworks.io) 대표님의 소개로 하드웨어 관련 technical writing을 시작한다. NU40 DK을 기반으로 무언가를 만드는 것부터 출발하지만, 이 블로그에는 그 외에도 내가 만들고 싶은 것들을 기록해 나갈 예정이다.
 
 파프리카데이터랩, 왈라, 그리고 격동하는 AI 시대를 살아가는 지금 내가 하는 것들을 기록하고자 한다.
 
