@@ -11,7 +11,7 @@ categories: ["hardware"]
 
 ## 시작
 
-[nucode](https://nucode.kr) 대표님의 소개로 하드웨어 관련 technical writing을 시작한다. NUDK40을 기반으로 무언가를 만드는 것부터 출발하지만, 이 블로그에는 그 외에도 내가 만들고 싶은 것들을 기록해 나갈 예정이다.
+[nucode](https://nuworks.io) 대표님의 소개로 하드웨어 관련 technical writing을 시작한다. NUDK40을 기반으로 무언가를 만드는 것부터 출발하지만, 이 블로그에는 그 외에도 내가 만들고 싶은 것들을 기록해 나갈 예정이다.
 
 ## 밋업
 
