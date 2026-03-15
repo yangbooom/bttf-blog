@@ -24,7 +24,7 @@
           {{ if .IsHome }}
             ~/{{ .Site.Title }}
           {{ else }}
-            ~/{{ .Site.Title }}/{{ .RelPermalink }}
+            ~/{{ .Site.Title }}{{ .RelPermalink }}
           {{ end }}
         </div>
         <div class="window-actions"></div>
