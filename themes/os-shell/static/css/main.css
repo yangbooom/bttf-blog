@@ -753,6 +753,7 @@ a {
 .doc-content {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 32px 40px 48px;
   max-width: 800px;
 }
@@ -901,6 +902,7 @@ a {
   overflow-x: auto;
   font-size: 13px;
   line-height: 1.6;
+  max-width: 100%;
 }
 
 .prose pre code {
@@ -923,6 +925,8 @@ a {
   border-collapse: collapse;
   margin: 16px 0;
   font-size: 14px;
+  display: block;
+  overflow-x: auto;
 }
 
 .prose th {
