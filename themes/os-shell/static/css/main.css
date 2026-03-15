@@ -419,16 +419,11 @@ a {
   margin-bottom: 48px;
 }
 
-.home-icon {
-  color: var(--accent);
-  margin-bottom: 16px;
-}
-
-.home-header h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 8px;
-  color: var(--content-heading);
+.home-logo {
+  display: block;
+  max-width: min(360px, 80%);
+  height: auto;
+  margin: 0 auto 16px;
 }
 
 .home-desc {

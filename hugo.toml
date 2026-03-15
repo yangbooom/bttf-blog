@@ -6,6 +6,10 @@ theme = 'os-shell'
 [params]
   description = 'A blog that looks like an operating system'
   author = 'kimuyb'
+  images = ['/img/og-default.png']
+
+  [params.social]
+    twitter = ''
 
 [taxonomies]
   category = 'categories'
