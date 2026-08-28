@@ -1,5 +1,5 @@
 # NOTE: HTTP→HTTPS redirect must be configured at DNS/CDN level (e.g., Cloudflare, GitHub Pages settings)
-baseURL = 'https://blog.youngbum.kim/'
+baseURL = 'https://youngbum.kim/'
 title = 'BTTF Blog'
 theme = 'os-shell'
 enableRobotsTXT = true
