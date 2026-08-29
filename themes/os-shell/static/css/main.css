@@ -14,67 +14,67 @@
      Midnight blue sky, electric cyan time-travel glow,
      orange/amber fire trails, DeLorean metallic gray */
 
-  /* Desktop — neutral dark */
-  --desktop-bg: #0a0a0a;
-  --desktop-gradient: linear-gradient(160deg, #0a0a0a 0%, #111111 40%, #161616 100%);
+  /* Desktop — midnight navy fading into smoky violet and flame orange */
+  --desktop-bg: #10142c;
+  --desktop-gradient: linear-gradient(155deg, #10142c 0%, #20244a 48%, #85629a 78%, #e85b2a 100%);
 
   /* Menubar */
-  --menubar-bg: rgba(14, 14, 14, 0.88);
-  --menubar-text: #d0d0d0;
+  --menubar-bg: rgba(16, 20, 44, 0.9);
+  --menubar-text: #ded9d2;
   --menubar-height: 32px;
 
   /* Window */
-  --window-bg: #141414;
-  --window-border: #2a2a2a;
-  --window-titlebar: #0e0e0e;
-  --window-title-text: #888888;
+  --window-bg: #181d3d;
+  --window-border: #3b416f;
+  --window-titlebar: #12162f;
+  --window-title-text: #9a9cb5;
   --window-radius: 10px;
   --window-shadow: 0 8px 32px rgba(0, 0, 0, 0.5),
                    0 2px 8px rgba(0, 0, 0, 0.3);
 
   /* Sidebar */
-  --sidebar-bg: #0e0e0e;
+  --sidebar-bg: #151936;
   --sidebar-width: 240px;
-  --sidebar-border: #2a2a2a;
-  --sidebar-text: #888888;
-  --sidebar-hover: #1e1e1e;
-  --sidebar-active: #2a2a2a;
+  --sidebar-border: #3b416f;
+  --sidebar-text: #9a9cb5;
+  --sidebar-hover: #252a54;
+  --sidebar-active: #303663;
 
   /* Content */
-  --content-bg: #141414;
-  --content-text: #d0ccc4;
-  --content-muted: #888078;
-  --content-heading: #f0ece4;
-  --content-link: #e8a040;
-  --content-link-hover: #f0b860;
-  --content-code-bg: #0e0e0e;
-  --content-border: #2a2a2a;
+  --content-bg: #181d3d;
+  --content-text: #ded9d2;
+  --content-muted: #9a9cb5;
+  --content-heading: #fff0c8;
+  --content-link: #f2b632;
+  --content-link-hover: #ffd45a;
+  --content-code-bg: #10142c;
+  --content-border: #3b416f;
 
-  /* Accent — bright amber (flux capacitor glow) */
-  --accent: #e8a040;
-  --accent-hover: #f0b860;
-  --accent-subtle: rgba(232, 160, 64, 0.10);
+  /* Accent — logo yellow / flux capacitor glow */
+  --accent: #f2b632;
+  --accent-hover: #ffd45a;
+  --accent-subtle: rgba(242, 182, 50, 0.12);
 
-  /* Secondary accent — coral (flux capacitor red knobs) */
-  --accent-warm: #e06060;
-  --accent-warm-hover: #e87878;
-  --accent-warm-subtle: rgba(224, 96, 96, 0.10);
+  /* Secondary accent — fire trail orange */
+  --accent-warm: #e85b2a;
+  --accent-warm-hover: #ff7846;
+  --accent-warm-subtle: rgba(232, 91, 42, 0.12);
 
   /* Dock */
-  --dock-bg: rgba(14, 14, 14, 0.78);
-  --dock-border: rgba(42, 42, 42, 0.5);
-  --dock-icon: #888888;
-  --dock-active: #e8a040;
+  --dock-bg: rgba(16, 20, 44, 0.82);
+  --dock-border: rgba(59, 65, 111, 0.65);
+  --dock-icon: #9a9cb5;
+  --dock-active: #f2b632;
 
   /* Traffic lights */
   --light-red: #ff3d00;
   --light-yellow: #ffd600;
   --light-green: #00e676;
 
-  /* Tags — coral red */
-  --tag-bg: rgba(224, 96, 96, 0.10);
-  --tag-text: #e06060;
-  --tag-border: rgba(224, 96, 96, 0.20);
+  /* Tags — fire trail orange */
+  --tag-bg: rgba(232, 91, 42, 0.12);
+  --tag-text: #ff7846;
+  --tag-border: rgba(232, 91, 42, 0.28);
 
   /* Typography */
   --font-sans: 'Pretendard Variable', 'Pretendard', 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
